@@ -32,6 +32,7 @@ step-uat:
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
     - sudo docker-compose -f docker-compose.yml up -d
+    - sudo running step-uat
 
 step-deploy-staging:
   stage: deploy
